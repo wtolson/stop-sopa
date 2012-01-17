@@ -1,6 +1,7 @@
+#!/bin/sh
+
 SERVER=$2
 DIR=$3
-
 
 case "$1" in
     'activate')
