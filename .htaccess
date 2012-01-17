@@ -1,0 +1,10 @@
+ErrorDocument 503 /index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !robots.txt
+    RewriteCond %{REQUEST_URI} !index\.html$
+    RewriteRule .* - [R=503,L]
+</IfModule>
