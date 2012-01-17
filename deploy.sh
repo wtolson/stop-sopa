@@ -8,7 +8,7 @@ case "$1" in
     ;;
 
     'deactivate')
-        ssh $SERVER "[ -e $DIR/.htaccess ] && [ -e $DIR/.htaccess.bkup ] && mv .htaccess .htaccess_sopa; [ -e $DIR/.htaccess.bkup ] && mv .htaccess.bkup .htaccess"
+        ssh $SERVER "[ -e $DIR/.htaccess ] && mv .htaccess .htaccess_sopa; [ -e $DIR/.htaccess.bkup ] && mv .htaccess.bkup .htaccess"
     ;;
 
     *)
